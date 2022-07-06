@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastfood Order</title>
+    <link rel="stylesheet"href="style/index.css?V=<?php echo time();?>">
+</head>
+<body>
+    <div class="order-container">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="order.html">Shop</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!--end of navbar-->
+    <div class="a">
+    <div class="order-form">
+    <form action="order.php"method="POST">
+            <input type="text"placeholder="Name"name="name"required><br>
+            <input type="number"placeholder="Phone Number"name="phone"required><br>
+            <select name="type">
+                <option value="Ugali">Ugali</option>
+                <option value="Kales">Kales</option>
+                <option value="Burger">Burger</option>
+                <option value="Coffee">Coffee</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Matoke">Matoke</option>
+            </select>
+            <input type="number"placeholder="Quantity"name="quantity"required><br>
+            <input type="submit"value="Order"name="btn-order">
+        </form>
+        </div>
+    <div class="make-order">
+        <!--for decoration-->
+    </div>
+    </div>
+    
+    <div class="b">
+        <h3>Menu</h3>
+        <div class="order-table">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>FOOD</th>
+                    <th>DESCRIPTION</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="pics/ugali.webp"><br>Ugali</td>
+                    <td>A Kenyan food made from maize flour</td>
+                    <td>Ksh. 300</td>
+                </tr>
+                <tr>
+                    <td><img src="pics/kales.jpg"><br>Kales</td>
+                    <td>A ruffled-leafed green vegetable.Commonly used as a 
+                        garnish for food presentation or as a cooked vegetable.</td>
+                    <td>Ksh. 200</td>
+                </tr>
+                <tr>
+                    <td><img src="pics/burger.jpg"><br>Burger</td>
+                    <td>Sandwich made from ground meats that are formed 
+                        into a patty, cooked, and placed between two halves of a bun.</td>
+                    <td>Ksh. 500</td>
+                </tr>
+                <tr>
+                    <td><img src="pics/coffee.jpg"><br>Coffee</td>
+                    <td> a beverage brewed from the roasted and ground seeds of the 
+                        tropical evergreen coffee plant</td>
+                    <td>Ksh. 100</td>
+                </tr>
+                <tr>
+                    <td><img src="pics/pizza.jpg"><br>Pizza</td>
+                    <td>A dish of Italian origin consisting of a flattened disk of bread 
+                        dough topped with some combination of olive oil, oregano, tomato</td>
+                    <td>Ksh. 900</td>
+                </tr>
+                <tr>
+                    <td><img src="pics/matoke.jpg"><br>Matoke</td>
+                    <td>Originating from Kisii and Uganda. Made from cooked bananas</td>
+                    <td>Ksh. 600</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
